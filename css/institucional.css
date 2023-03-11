@@ -36,10 +36,11 @@
 
 .institucional__contacto-telefono {
     line-height: normal;
+    color: blue;
 }
 
 .institucional__contacto-email {
-    color: var(--fuente-ceniza-oscuro);
+    color: blue;
     text-decoration: underline;
     display: block;
 }
