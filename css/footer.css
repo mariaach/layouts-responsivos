@@ -10,6 +10,7 @@
 .footer__social {
     display: flex;
     list-style-type: none;
+    gap: 10px 20px;
 }
 
 .footer__midia {
@@ -17,16 +18,28 @@
     width: 42px;
     height: 42px;
     margin: 2rem 1rem;
-    padding: 8px
 }
 
 .footer__navegacion {
     color: var(--background-blanco);
-    text-align: center;
+    font: var(--open-sans);
     line-height: 3;
+    text-align: center;
 }
 
 .footer__enlace {
     display: inline-block;
     margin: 0 .5rem .7rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .footer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .footer__navegacion {
+        text-align: left;
+        min-width: 600px;
+    }
 }

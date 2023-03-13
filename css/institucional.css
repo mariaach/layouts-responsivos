@@ -36,15 +36,39 @@
 
 .institucional__contacto-telefono {
     line-height: normal;
-    color: blue;
 }
 
 .institucional__contacto-email {
-    color: blue;
+    color: var(--fuente-ceniza-oscuro);
     text-decoration: underline;
     display: block;
 }
 
 .institucional__video {
     width: 100vw;
+}
+
+@media screen and (min-width:768px) {
+    .institucional__contacto-email {
+        display: inline-block;
+    }
+    .institucional__video {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .institucional__contenido {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+    }
+    .institucional__video {
+        align-self: flex-end;
+        width: 375px;
+    }
+    .institucional__contacto-email {
+        display: block;
+    }
 }
